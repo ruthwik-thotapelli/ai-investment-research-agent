@@ -95,7 +95,7 @@ Return on Equity (TTM): ${d.ReturnOnEquityTTM ?? 'N/A'}
 Quarterly Revenue Growth (YoY): ${d.QuarterlyRevenueGrowthYOY ?? 'N/A'}
 Quarterly Earnings Growth (YoY): ${d.QuarterlyEarningsGrowthYOY ?? 'N/A'}
 Beta: ${d.Beta ?? 'N/A'}
-52-Week High: ${d.['52WeekHigh'] ?? 'N/A'}
-52-Week Low: ${d.['52WeekLow'] ?? 'N/A'}
+52-Week High: ${d['52WeekHigh'] ?? 'N/A'}
+52-Week Low: ${d['52WeekLow'] ?? 'N/A'}
   `.trim();
 }
