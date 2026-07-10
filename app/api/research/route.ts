@@ -53,6 +53,11 @@ export async function POST(req: NextRequest) {
           const nodeName = Object.keys(update)[0];
           const nodeOutput = (update as Record<string, any>)[nodeName];
 
+          // Check if the node returned an error
+          if (nodeOutput.errors && nodeOutput.errors.length > 0) {
+            throw new Error(nodeOutput.errors[nodeOutput.errors.length - 1]);
+          }
+
           // Map node outputs to SSE events
           if (nodeName === 'company_research') {
             report.overview = nodeOutput.overview;
