@@ -8,7 +8,7 @@ import { FinancialData } from '@/types/research';
 
 const llm = new ChatGoogleGenerativeAI({
   model: 'gemini-2.0-flash',
-  apiKey: process.env.GEMINI_API_KEY!,
+  apiKey: process.env.GEMINI_API_KEY || 'dummy_key',
   temperature: 0.1,
 });
 
