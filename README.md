@@ -134,8 +134,8 @@ Copy the example environment file:
 cp .env.example .env.local
 ```
 Open `.env.local` and add your API keys:
-- `GEMINI_API_KEY`: Get from [Google AI Studio](https://aistudio.google.com/) *(Required)*
-- `TAVILY_API_KEY`: Get from [Tavily](https://tavily.com/) *(Required)*
+- `GEMINI_API_KEY`: Get from [Google AI Studio](https://aistudio.google.com/app/apikey). Sign in, click the blue "Create API key" button, and copy the string (starts with `AIzaSy`). *(Required)*
+- `TAVILY_API_KEY`: Get from [Tavily](https://app.tavily.com/sign-in). Sign up for a free account, go to the dashboard, and copy your API key (starts with `tvly-`). *(Required)*
 - `ALPHA_VANTAGE_API_KEY`: Get from [Alpha Vantage](https://www.alphavantage.co/) *(Optional but highly recommended)*
 - `NEWS_API_KEY`: Get from [NewsAPI.org](https://newsapi.org/) *(Optional)*
 
